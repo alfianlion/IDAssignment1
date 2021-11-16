@@ -3,8 +3,8 @@
     Javascript to set the base to which url was being directed. 
     VALUES TO CHANGE WHEN PUSHING TO GITHUB
 
-    False = Github Pages URL
-    True  = localhost
+    True  = Github Pages URL
+    False = localhost
 */
 
 baseChange(true)
