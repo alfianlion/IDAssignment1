@@ -208,7 +208,7 @@ footer {
   /* /* width: 100%; */
   display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
 }
 
 ::-webkit-scrollbar {
@@ -242,7 +242,6 @@ footer {
 }
 
 @media screen and (min-width: 750px) {
-
   .image {
     min-width: 50%;
     margin-right: 20px;
@@ -254,14 +253,14 @@ footer {
     align-items: center;
   }
 
-  table{
+  table {
     font-size: 2vw;
   }
 
   h1 {
     font-size: 6em;
   }
-  
+
   h2 {
     font-size: 5.5em;
   }
