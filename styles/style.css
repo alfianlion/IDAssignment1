@@ -1,24 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,400;0,500;1,100&display=swap");
+
+/* font-family: 'Righteous', cursive; */
+
+:root {
+  --main-primary-color: #c28e2c;
+  --main-secondary-color: #2c66c2;
+  --main-bg-color: black;
+}
+
 * {
   color: white;
+  animation-name: panIn;
   border: none;
 }
 
 body {
-  background-color: darkhaki;
+  background-color: black;
+  overflow-x: hidden;
 }
 
 h1,
 h2 {
   margin: 0;
   width: 100%;
+  font-family: "Righteous", cursive;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 h2 {
   font-size: 4em;
+}
+
+p {
+  font-size: 1.5em;
 }
 
 header {
@@ -40,6 +57,8 @@ nav {
   width: 200px;
   position: inherit;
   display: flex;
+  animation-name: panIn, fadeIn;
+  animation-duration: 3s;
 }
 
 nav ul {
@@ -55,19 +74,26 @@ nav ul a {
 }
 
 main {
-  height: 465px;
+  height: 100vh;
+  /* max-width: 100%; */
   max-width: 100vw;
   /* padding: 140px 0px 140px 40px; */
   background-image: url("https://picsum.photos/seed/picsum/2000/2000");
+  background-repeat: no-repeat;
   background-size: cover;
   font-size: 2em;
+  animation-name: panIn;
+  animation-duration: 2s;
 }
 
 section {
-  min-height: 100vh;
+  height: 100%;
   max-width: 100%;
-  padding: 60px 40px 40px;
-  background-color: darkkhaki;
+  padding: 100px 40px 100px 40px;
+  /* padding: 0px 0px 0px 0px; */
+  background-color: var(--main-bg-color);
+  /* animation-name: panIn;
+  animation-duration: 2s; */
 }
 
 footer ul {
@@ -84,13 +110,19 @@ footer {
   position: relative;
   height: 70px;
   width: 100%;
-  background-color: black;
+  background-color: var(--main-bg-color);
+}
+
+.linkimage {
+  display: block;
+  max-width: 100%;
 }
 
 .image {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
-  width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .itemdiv {
@@ -101,11 +133,11 @@ footer {
 }
 
 .darkyellow {
-  color: #c28e2c;
+  color: var(--main-primary-color);
 }
 
 .darkblue {
-  color: #2c66c2;
+  color: var(--main-secondary-color);
 }
 
 .overlay {
@@ -117,7 +149,8 @@ footer {
   top: 0;
   right: 0;
   left: 0;
-  padding: 140px 0px 140px 40px;
+  height: 65vh;
+  padding: 200px 0px 80px 20px;
   background-color: rgba(0, 0, 0, 0.6);
   /* height: 100%; */
   max-width: 100%;
@@ -126,4 +159,38 @@ footer {
 
 .main-article {
   z-index: 99;
+}
+
+.fullstop {
+  font-size: 3em;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--main-bg-color);
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  background-color: var(--main-primary-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes panIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
