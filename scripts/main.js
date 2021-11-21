@@ -7,7 +7,7 @@
     False = localhost
 */
 
-baseChange(true)
+baseChange(true);
 
 function baseChange(bool){
     if (bool == false){
