@@ -14,6 +14,10 @@
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   overflow-x: hidden;
@@ -36,6 +40,11 @@ h2 {
 
 p {
   font-size: 1.5em;
+}
+
+table {
+  width: 100%;
+  text-align: left;
 }
 
 header {
@@ -126,10 +135,35 @@ footer {
 }
 
 .itemdiv {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 140px;
+  background-color: transparent;
+}
+
+.textdiv {
+  position: relative;
+  display: block;
+}
+
+.textbg {
+  display: block;
+  position: absolute;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+  user-select: none;
+  text-transform: uppercase;
+  height: auto;
+  max-width: 100%;
+  padding: 20px;
+  font-size: 15vw;
+  /* top: 100%; */
+  right: 0%;
+  left: 0%;
 }
 
 .darkyellow {
@@ -165,6 +199,18 @@ footer {
   font-size: 3em;
 }
 
+#colored {
+  text-decoration: underline;
+}
+
+#contact {
+  /* position: relative; */
+  /* /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
 ::-webkit-scrollbar {
   background-color: var(--main-bg-color);
   width: 5px;
@@ -192,5 +238,31 @@ footer {
 
   to {
     transform: translateX(0%);
+  }
+}
+
+@media screen and (min-width: 750px) {
+
+  .image {
+    min-width: 50%;
+    margin-right: 20px;
+    /* background-color: black; */
+  }
+  .itemdiv {
+    z-index: 99;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  table{
+    font-size: 2vw;
+  }
+
+  h1 {
+    font-size: 6em;
+  }
+  
+  h2 {
+    font-size: 5.5em;
   }
 }
