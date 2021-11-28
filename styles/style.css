@@ -15,6 +15,7 @@
 }
 
 html {
+  /* color: white; */
   scroll-behavior: smooth;
 }
 
@@ -28,6 +29,7 @@ h2 {
   margin: 0;
   width: 100%;
   font-family: "Righteous", cursive;
+  transition: 2s;
 }
 
 h1 {
@@ -40,6 +42,15 @@ h2 {
 
 p {
   font-size: 1.5em;
+}
+
+p,
+ul,
+li,
+ol,
+tr,
+th {
+  font-family: "Roboto", sans-serif;
 }
 
 table {
@@ -82,15 +93,28 @@ nav ul a {
   margin: 0 10px;
 }
 
+li {
+  width: auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 main {
   height: 100vh;
-  /* max-width: 100%; */
   max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+  /* max-width: 100%; */
   /* padding: 140px 0px 140px 40px; */
-  background-image: url("https://picsum.photos/seed/picsum/2000/2000");
+  /* background-image: url("https://picsum.photos/seed/picsum/2000/2000"); */
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 2em;
+  /* padding: 20px; */
   animation-name: panIn;
   animation-duration: 2s;
 }
@@ -143,6 +167,11 @@ footer {
   background-color: transparent;
 }
 
+.infodiv {
+  display: flex;
+  flex-direction: column;
+}
+
 .textdiv {
   position: relative;
   display: block;
@@ -157,21 +186,25 @@ footer {
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
   user-select: none;
   text-transform: uppercase;
-  height: auto;
   max-width: 100%;
   padding: 20px;
   font-size: 15vw;
-  /* top: 100%; */
+  /* top: 100%;
   right: 0%;
-  left: 0%;
+  left: 0%; */
 }
 
 .darkyellow {
-  color: var(--main-primary-color);
+  /* color: var(--main-primary-color); */
+  transition: 2s;
 }
 
 .darkblue {
-  color: var(--main-secondary-color);
+  /* color: var(--main-secondary-color); */
+}
+
+.textoverlay {
+  margin-top: 200px;
 }
 
 .overlay {
@@ -183,8 +216,10 @@ footer {
   top: 0;
   right: 0;
   left: 0;
-  height: 65vh;
-  padding: 200px 0px 80px 20px;
+  height: 100vh;
+  /* padding-top: 200px; */
+  padding-left: 80px;
+  /* padding: 200px 0px 80px 40px; */
   background-color: rgba(0, 0, 0, 0.6);
   /* height: 100%; */
   max-width: 100%;
@@ -199,8 +234,33 @@ footer {
   font-size: 3em;
 }
 
+.white {
+  transition: 2s;
+  /* color: white; */
+}
+
+.imgcontactdiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+}
+
+.imgcontact {
+  text-align: center;
+  height: 50%;
+  width: 30%;
+}
+
 #colored {
   text-decoration: underline;
+}
+
+#colored:hover {
+  transition: 2s;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #contact {
@@ -258,7 +318,7 @@ footer {
   }
 
   h1 {
-    font-size: 6em;
+    font-size: 12vw;
   }
 
   h2 {
