@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuralfian Rashid</title>
-    <script src="/My-Portfolio/scripts/main.js"></script>
+    <script src="/My-Portfolio/scripts/main.js" defer></script>
     <link rel="stylesheet" href="/My-Portfolio/styles/normalize.css">
     <link rel="stylesheet" href="/My-Portfolio/styles/style.css">
-    <!-- <script src="/scripts/main.js"></script>
+    <!-- <script src="/scripts/main.js" defer></script>
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/style.css"> -->
 </head>
@@ -25,9 +25,11 @@
             </ul>
         </nav>
     </header>
-    <main id="#">
+    <main id="#contact">
         <div class="overlay">
-            <h1>Contact_<span><br>Me<span class="darkyellow">:</span></span></h1>
+            <div class="textoverlay">
+                <h1>Contact_<span><br>Me<span class="darkyellow">:</span></span></h1>
+            </div>
         </div>
     </main>
     <section>
@@ -36,21 +38,24 @@
         </div>
         <div class="itemdiv" id="contact">
         <p>I always like to talk about designing and building websites. <br><br> Are you thinking of a project on it? <br><br> Choose your preferred mode of communication and let's talk.</p>
-        <ul>
-            <li><a href="mailto:alfianlion@gmail.com">Email</a>
+        <ul class="imgcontactdiv">
+            <li class="imgcontact"><a href="mailto:alfianlion@gmail.com"><img src="https://www.google.com/intl/en-GB/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97" alt="" width="50%" height="50%"></a>
             </li>
-            <li><a href="https://www.linkedin.com/in/nuralfian/">LinkedIn</a>
+            <li class="imgcontact"><a href="https://www.linkedin.com/in/nuralfian/"><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="" width="50%" height="50%">
+            </a>
             </li>
-            <li><a href="tel:+6594559551">Phone</a>
+            <!-- <li class="imgcontact"><a href="tel:+6594559551"><img src="/images/pngkey.com-white-square-png-302801.png" alt="" width="50%" height="50%"> -->
+            <li class="imgcontact"><a href="tel:+6594559551"><img src="/My-Portfolio/images/pngkey.com-white-square-png-302801.png" alt="" width="50%" height="50%">
+            </a>
             </li>
         </ul>
     </div>
     </section>
     <footer>
         <ul>
-            <li id="colored">Colored Ver</li>
-            <li><a href="#"><span>Back to Top</span></a></li>
-            <li>2021 Version - Nuralfian</li>
+            <a><li id="colored"><span class="darkyellow">Colored Ver</span></li></a>
+            <li><a href="#"><span class="darkyellow">Back to Top</span></a></li>
+            <li><span class="darkyellow">2021 Version - Nuralfian</span></li>
         </ul>
     </footer>
 </body>
