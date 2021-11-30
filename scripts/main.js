@@ -1,18 +1,20 @@
-// URL
-/*
-    Javascript to set the base to which url was being directed. 
-    VALUES TO CHANGE WHEN PUSHING TO GITHUB
-
-    True  = Github Pages URL
-    False = localhost
-*/
 
 
-// let toggled = true;
+
 
 innit();
 
+baseChange(true);
+
+
+
 document.getElementById("colored").addEventListener('click',function(){
+
+    /*  
+        This EventListener add as a event handler to a DOM. 
+        This will store user input as to which version user prefers to view the website
+    */
+
     let toggled = sessionStorage.getItem("colored");
     if (toggled === "false" || toggled === ""){
         sessionStorage.setItem('colored',"true");
@@ -26,6 +28,16 @@ document.getElementById("colored").addEventListener('click',function(){
 })
 
 function colorver(toggle) {
+
+    /*
+        function colorver() is a toggle function for the text 'Colored Ver' / 'Uncolored Ver'
+        When clicked, it will change all the <span> elements to the desired color / uncolored ver.
+        Additionally, the background will be display or not depending on it as well.
+
+        True    = Colored ver 
+        False   = Uncolored ver
+
+    */
 
     // All span element
     let span = document.querySelectorAll("span.darkyellow");
@@ -55,21 +67,37 @@ function colorver(toggle) {
 
  } 
 
- function innit(){
-     let toggled = sessionStorage.getItem("colored");
-     if (toggled === "false" || toggled === ""){
-         colorver(toggled);
-         document.getElementById("colored").innerHTML = "Colored Ver" 
-         //  localStorage.setItem('colored',"true");
-        } else {
-            colorver(toggled);
-            document.getElementById("colored").innerHTML = "Uncolored Ver" 
-        //  localStorage.setItem('colored',"false");
-     }
- }
+function innit(){
 
-baseChange(true);
+    /*
+    function innit() initialize the color of the element in the page.
+    Colors and text change based on what user clicked on 'Colored Ver' / 'Uncolored Ver'.
+    Using sessionStorage to store user input.
+
+    True    = Colored ver 
+    False   = Uncolored ver
+*/
+
+    let toggled = sessionStorage.getItem("colored");
+    if (toggled === "false" || toggled === ""){
+        colorver(toggled);
+        document.getElementById("colored").innerHTML = "Colored Ver" 
+    } else {
+        colorver(toggled);
+        document.getElementById("colored").innerHTML = "Uncolored Ver" 
+    }
+}
+
 function baseChange(bool){
+
+    /*
+        baseChange() is a function to set the base to which url was being directed. 
+        VALUES TO CHANGE WHEN PUSHING TO GITHUB
+
+        True  = Github Pages URL
+        False = localhost
+    */
+   
     if (bool == false){
         // For Localhost
         var base = document.createElement('base');
