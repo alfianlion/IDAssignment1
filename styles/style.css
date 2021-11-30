@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,400;0,500;1,100&display=swap");
 
-/* font-family: 'Righteous', cursive; */
-
 :root {
   --main-primary-color: #c28e2c;
   --main-secondary-color: #2c66c2;
@@ -15,7 +13,6 @@
 }
 
 html {
-  /* color: white; */
   scroll-behavior: smooth;
 }
 
@@ -108,13 +105,9 @@ main {
   align-items: center;
   justify-content: center;
   transition: 2s;
-  /* max-width: 100%; */
-  /* padding: 140px 0px 140px 40px; */
-  /* background-image: url("https://picsum.photos/seed/picsum/2000/2000"); */
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 2em;
-  /* padding: 20px; */
   animation-name: panIn;
   animation-duration: 2s;
 }
@@ -123,10 +116,7 @@ section {
   height: 100%;
   max-width: 100%;
   padding: 100px 40px 100px 40px;
-  /* padding: 0px 0px 0px 0px; */
   background-color: var(--main-bg-color);
-  /* animation-name: panIn;
-  animation-duration: 2s; */
 }
 
 footer ul {
@@ -195,12 +185,10 @@ footer {
 }
 
 .darkyellow {
-  /* color: var(--main-primary-color); */
   transition: 2s;
 }
 
 .darkblue {
-  /* color: var(--main-secondary-color); */
 }
 
 .textoverlay {
@@ -210,18 +198,13 @@ footer {
 .overlay {
   position: absolute;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   flex-direction: column;
   top: 0;
   right: 0;
   left: 0;
   height: 100vh;
-  /* padding-top: 200px; */
   padding-left: 80px;
-  /* padding: 200px 0px 80px 40px; */
   background-color: rgba(0, 0, 0, 0.6);
-  /* height: 100%; */
   max-width: 100%;
   z-index: 1;
 }
@@ -236,7 +219,6 @@ footer {
 
 .white {
   transition: 2s;
-  /* color: white; */
 }
 
 .imgcontactdiv {
@@ -264,8 +246,6 @@ footer {
 }
 
 #contact {
-  /* position: relative; */
-  /* /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,7 +285,6 @@ footer {
   .image {
     min-width: 50%;
     margin-right: 20px;
-    /* background-color: black; */
   }
   .itemdiv {
     z-index: 99;
