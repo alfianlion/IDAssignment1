@@ -2,7 +2,8 @@
 
 This project is to showcase my portfolio in a **HTML,CSS,JS** format. Included my _proudest projects_ made during my career as a web developer and to get to know _about myself **more**_!
 
-[Images Here]
+![First Image](/My-Portfolio/images/first_image_website.png)
+![Second Image](/My-Portfolio/images/second_image_website.png)
 
 ## Design Process
 
