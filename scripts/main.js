@@ -21,9 +21,6 @@ document.getElementById("colored").addEventListener('click',function(){
     }
 })
 
-document.getElementById("anchor").addEventListener("click", function(event){
-    event.preventDefault()
-  });
 
 function colorver(toggle) {
 
