@@ -1,12 +1,6 @@
-
-
-
-
 innit();
 
 baseChange(true);
-
-
 
 document.getElementById("colored").addEventListener('click',function(){
 
