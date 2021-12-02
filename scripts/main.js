@@ -107,7 +107,7 @@ function baseChange(bool){
     } else{
         // For Github Pages
         var base = document.createElement('base');
-        base.href = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + "/My-Portfolio";
+        base.href = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + "/IDAssignment1";
         document.getElementsByTagName('head')[0].appendChild(base);
         // alert("Current Page is on Github base!\nDo change to development base if necessary.");
     }
