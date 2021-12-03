@@ -120,7 +120,7 @@ function baseChange(bool){
         })
         let contact = document.getElementById("contact")
         contact.addEventListener('click',function(){
-            contact.href = "/IDAssigment1/contact.html";
+            contact.href = "/IDAssignment1/contact.html";
         })
         // alert("Current Page is on Github base!\nDo change to development base if necessary.");
     }
