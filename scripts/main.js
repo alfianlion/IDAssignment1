@@ -95,15 +95,17 @@ function baseChange(bool){
    
     if (bool == false){
         // For Localhost
-        var base = document.createElement('base');
-        base.href = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
-        document.getElementsByTagName('head')[0].appendChild(base);
+        document.getElementById("home").href = "/index.html";
+        document.getElementById("project").href = "/project.html";
+        document.getElementById("contact").href = "/contact.html";
+
         // alert("Current Page is on Localhost base!\nDo change to production base if necessary.");
     } else{
         // For Github Pages
-        var base = document.createElement('base');
-        base.href = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + "/IDAssignment1";
-        document.getElementsByTagName('head')[0].appendChild(base);
+        document.getElementById("home").href = "/IDAssignment1/index.html";
+        document.getElementById("project").href = "/IDAssignment1/project.html";
+        document.getElementById("contact").href = "/IDAssigment1/contact.html";
+
         // alert("Current Page is on Github base!\nDo change to development base if necessary.");
     }
 }
