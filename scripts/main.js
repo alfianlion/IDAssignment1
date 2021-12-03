@@ -95,17 +95,33 @@ function baseChange(bool){
    
     if (bool == false){
         // For Localhost
-        document.getElementById("home").href = "/index.html";
-        document.getElementById("project").href = "/project.html";
-        document.getElementById("contact").href = "/contact.html";
-
+        let home = document.getElementById("home")
+        home.addEventListener('click',function(){
+            home.href = "/index.html";
+        })
+        let project = document.getElementById("project")
+        project.addEventListener('click',function(){
+            project.href = "/project.html";
+        })
+        let contact = document.getElementById("contact")
+        contact.addEventListener('click',function(){
+            contact.href = "/contact.html";
+        })
         // alert("Current Page is on Localhost base!\nDo change to production base if necessary.");
     } else{
         // For Github Pages
-        document.getElementById("home").href = "/IDAssignment1/index.html";
-        document.getElementById("project").href = "/IDAssignment1/project.html";
-        document.getElementById("contact").href = "/IDAssigment1/contact.html";
-
+        let home = document.getElementById("home")
+        home.addEventListener('click',function(){
+            home.href = "/IDAssignment1/index.html";
+        })
+        let project = document.getElementById("project")
+        project.addEventListener('click',function(){
+            project.href = "/IDAssignment1/project.html";
+        })
+        let contact = document.getElementById("contact")
+        contact.addEventListener('click',function(){
+            contact.href = "/IDAssigment1/contact.html";
+        })
         // alert("Current Page is on Github base!\nDo change to development base if necessary.");
     }
 }
