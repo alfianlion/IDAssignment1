@@ -1,6 +1,6 @@
 innit();
 
-baseChange(true);
+baseChange(false);
 
 document.getElementById("colored").addEventListener('click',function(){
 
@@ -95,30 +95,30 @@ function baseChange(bool){
    
     if (bool == false){
         // For Localhost
-        let home = document.getElementById("home")
+        let home = document.getElementById("hpage")
         home.addEventListener('click',function(){
-            home.href = "/index.html";
+            home.location.href = "/index.html";
         })
-        let project = document.getElementById("project")
+        let project = document.getElementById("ppage")
         project.addEventListener('click',function(){
-            project.href = "/project.html";
+            project.location.href = "/project.html";
         })
-        let contact = document.getElementById("contact")
+        let contact = document.getElementById("cpage")
         contact.addEventListener('click',function(){
-            contact.href = "/contact.html";
+            contact.location.href = "/contact.html";
         })
         // alert("Current Page is on Localhost base!\nDo change to production base if necessary.");
     } else{
         // For Github Pages
-        let home = document.getElementById("home")
+        let home = document.getElementById("hpage")
         home.addEventListener('click',function(){
             home.href = "/IDAssignment1/index.html";
         })
-        let project = document.getElementById("project")
+        let project = document.getElementById("ppage")
         project.addEventListener('click',function(){
             project.href = "/IDAssignment1/project.html";
         })
-        let contact = document.getElementById("contact")
+        let contact = document.getElementById("cpage")
         contact.addEventListener('click',function(){
             contact.href = "/IDAssignment1/contact.html";
         })
